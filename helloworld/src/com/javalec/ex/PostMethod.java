@@ -12,14 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloWorld
  */
-@WebServlet("/HWorld")   //맵핑하는 방법
-public class HelloWorld extends HttpServlet { 
+@WebServlet("/PostMethod")   //맵핑하는 방법
+public class PostMethod extends HttpServlet { 
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public HelloWorld() {
+    public PostMethod() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -64,7 +64,6 @@ public class HelloWorld extends HttpServlet {
 		writer.print("</html>");
 		
 		writer.close();
-		
 	}
 
 }

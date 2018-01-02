@@ -801,3 +801,18 @@ Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/helloworld/
 
 !ENTRY org.eclipse.core.resources 4 380 2018-01-02 18:26:14.036
 !MESSAGE The resource tree is locked for modifications.
+
+!ENTRY org.eclipse.jst.server.core 4 0 2018-01-02 18:34:58.457
+!MESSAGE Could not launch in profiling mode because no profilers are configured.
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-02 19:22:36.401
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-02 19:22:36.409
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-02 19:27:01.565
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-02 19:27:01.572
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
