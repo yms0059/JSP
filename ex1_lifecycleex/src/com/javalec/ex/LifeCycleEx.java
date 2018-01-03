@@ -55,16 +55,17 @@ public class LifeCycleEx extends HttpServlet {
 	}
 	
 	
-//	@PostConstruct
-//	private void initPostConstruct() {
-//		// TODO Auto-generated method stub
-//		System.out.println("initPostConstruct");
-//	}
-//	
-//	@PreDestroy
-//	private void destoryPreDestory() {
-//		// TODO Auto-generated method stub
-//		System.out.println("destoryPreDestory");
-//	}
+	
+	@PostConstruct  //선처리작업 init하기전에 작업
+	private void initPostConstruct() {  //메소드명은 임의로 만들어라
+		// TODO Auto-generated method stub
+		System.out.println("initPostConstruct");
+	}
+	
+	@PreDestroy    //후처리 자원해제된 후에 작업
+	private void destoryPreDestory() {
+		// TODO Auto-generated method stub
+		System.out.println("destoryPreDestory");
+	}
 
 }
