@@ -7,22 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%!
-		String id, pw;
-	%>
+
 	<%
-		id = request.getParameter("id");
-		pw = request.getParameter("pw");
-		
-		if(id.equals("abcde") && pw.equals("12345")) {
-			Cookie cookie = new Cookie("id", id);
-			cookie.setMaxAge(60);
-			response.addCookie(cookie);
-			response.sendRedirect("welcome.jsp");
-		} else {
-			response.sendRedirect("login.html");
-		}
+		session.setAttribute("mySessionName", "mySessionData");
+		session.setAttribute("myNum", 12345);
 	%>
+	
+	<a href="sessionget.jsp">session get</a>
 
 </body>
 </html>

@@ -7,22 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
-	<%
-		Cookie[] cookies = request.getCookies();
-		
-		if(cookies != null) {
-			for(int i=0; i<cookies.length; i++) {
-				if(cookies[i].getValue().equals("abcde")){
-					cookies[i].setMaxAge(0);
-					response.addCookie(cookies[i]);
-				}
-			}
-		}
-		
-		//response.sendRedirect("login.html");
-		response.sendRedirect("cookietest.jsp");
+	<%!
+		String id, pw;
 	%>
-	
+	<%
+		id = request.getParameter("id");
+		pw = request.getParameter("pw");
+		
+		if(id.equals("abcde") && pw.equals("12345")) {
+			session.setAttribute("id", id);	
+			response.sendRedirect("welcome.jsp");
+		} else {
+			response.sendRedirect("login.html");
+		}
+	%>
+
 </body>
 </html>
